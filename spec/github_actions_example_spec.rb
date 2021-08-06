@@ -5,7 +5,7 @@ RSpec.describe GithubActionsExample do
     expect(GithubActionsExample::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  it "is alive" do
+    expect(GithubActionsExample.ping).to eq(:pong)
   end
 end
